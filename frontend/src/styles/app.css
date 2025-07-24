@@ -1,0 +1,6 @@
+.app-main {
+  min-height: calc(100vh - 72px);
+  display: block;
+  background: none;
+
+}

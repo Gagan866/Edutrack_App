@@ -1,0 +1,50 @@
+.navbar-appbar {
+  background: rgba(255, 255, 255, 0.6);
+  /* backdrop-filter: blur(8px); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: #222;
+}
+
+.navbar-toolbar {
+  justify-content: space-between;
+  min-height: 72px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-title {
+  font-weight: 700;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.navbar-tabs .MuiTab-root {
+  font-weight: 600;
+  font-family: "Inter", "Poppins", sans-serif;
+  border-radius: 999px;
+  min-width: 120px;
+  margin: 0 4px;
+  color: #222;
+  transition: background 0.2s;
+}
+
+.navbar-tabs .Mui-selected {
+  background: linear-gradient(90deg, #6dd5ed 0%, #2193b0 100%);
+  color: #fff !important;
+  box-shadow: 0 4px 16px 0 rgba(33, 147, 176, 0.12);
+}
+
+.navbar-role-btn {
+  margin: 0 8px;
+}
+
+.navbar-logout-btn {
+  border-radius: 999px;
+  margin-left: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 16px 0 rgba(33, 147, 176, 0.12);
+}
