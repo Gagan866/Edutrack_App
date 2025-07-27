@@ -3,7 +3,7 @@ export const api = {};
 
 // Set your backend IP here. Use your system's local IP address so other devices on the same WiFi can access it.
 // Use localhost for local dev, otherwise use current hostname (for LAN access)
-const API_BASE_URL = "https://edutrackbackend-o13s.onrender.com";
+const API_BASE_URL = "https://edutrackbackend-o13s.onrender.com/api";
 
 export async function registerUser({ email, password, role }) {
   const res = await fetch(`${API_BASE_URL}/api/register/user`, {

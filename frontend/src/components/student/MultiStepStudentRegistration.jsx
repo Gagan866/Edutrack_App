@@ -232,6 +232,7 @@ const MultiStepStudentRegistration = ({ userInfo }) => {
         return;
       }
       console.log("Registering user with:", { email, password, role });
+      // API_BASE_URL is set to https://edutrackbackend-o13s.onrender.com/api in services/api.js
       const userRes = await import("../../services/api").then((api) =>
         api.registerUser({ email, password, role })
       );

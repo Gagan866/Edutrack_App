@@ -78,6 +78,7 @@ export default function MultiStepTeacherRegistration({ userInfo }) {
       errors.employeeId = "Employee ID must be exactly 7 characters";
     else {
       try {
+        // API_BASE_URL is set to https://edutrackbackend-o13s.onrender.com/api in services/api.js
         const res = await import("../../services/api").then((api) =>
           api.checkEmployeeIdExists(formData.employeeId)
         );
@@ -126,6 +127,7 @@ export default function MultiStepTeacherRegistration({ userInfo }) {
     setLoading(true);
     try {
       const { email, password, role } = formData;
+      // API_BASE_URL is set to https://edutrackbackend-o13s.onrender.com/api in services/api.js
       const userRes = await import("../../services/api").then((api) =>
         api.registerUser({ email, password, role })
       );

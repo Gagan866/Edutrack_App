@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com";
+axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com/api";
 import "../../styles/profile.css";
 
 const sectionOrder = [
