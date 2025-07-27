@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = { "http://localhost:5173", "http://10.91.66.25:5173" })
+@CrossOrigin(origins = { "http://localhost:5173", "http://10.91.66.25:5173", "https://edutrackappcse.netlify.app" })
 public class AuthController {
     @Autowired
     private UserService userService;
