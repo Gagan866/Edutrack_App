@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com/api";
+axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com";
 
 export default function TopBarCard() {
   const [student, setStudent] = useState(null);
@@ -59,7 +59,11 @@ export default function TopBarCard() {
       <div className="student-topbar-image-container">
         <img
           className="student-topbar-profile-image"
-          src={student.profileImage ? `data:image/jpeg;base64,${student.profileImage}` : "/default-avatar.png"}
+          src={
+            student.profileImage
+              ? `data:image/jpeg;base64,${student.profileImage}`
+              : "/default-avatar.png"
+          }
           alt={student.profileImage ? "Profile" : "No profile image"}
         />
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com/api";
+axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com";
 
 export default function TeacherTopBarCard() {
   const [teacher, setTeacher] = useState(null);
