@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-axios.defaults.baseURL = "https://edutrackbackend-o13s.onrender.com";
+axios.defaults.baseURL = "https://edutrack-app-kep0.onrender.com";
 
 export default function TopBarCard() {
   const [student, setStudent] = useState(null);
